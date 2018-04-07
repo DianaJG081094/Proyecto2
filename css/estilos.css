@@ -1,3 +1,14 @@
+body{
+  font-family: 'Dancing Script', cursive;
+  background: #02010a;
+
+}
+
+img{
+  -webkit-filter:drop-shadow(2px 2px 2px #02010a);
+  filter:drop-shadow(2px 2px 2px #02010a);
+}
+
 header{
   background-color:#5b7989;
   border-radius: 10px 10px 0px 0px;
@@ -34,23 +45,166 @@ header #navegador div .activo{
   text-decoration: none;
 }
 
-@media (min-width:900px){ /*DESKOP  */
+#ImgPrincipal{
+background-color: #82c3a6;
+padding: 10px;
+margin: 10px;
+}
+
+#ImgPrincipal img{
+  width: 100%;
+}
+
+#ImgSecundaria{
+  background-color: #d5c75f;
+  border: solid 1px;
+}
+
+#ImgSecundaria #contImg #segunda a img{
+  transition: transform 1s;
+}
+
+#ImgSecundaria #contImg #segunda a img:hover{
+  -webkit-filter:drop-shadow(2px 2px 2px #82c3a6);
+  filter:drop-shadow(2px 2px 2px #82c3a6);
+  border: solid 2px;
+  transform: rotate(10deg);
+}
+
+#ImgSecundaria #contImg #tercera a img{
+  transition: transform 1s;
+}
+
+#ImgSecundaria #contImg #tercera a img:hover{
+  -webkit-filter:drop-shadow(2px 2px 2px #82c3a6);
+  filter:drop-shadow(2px 2px 2px #82c3a6);
+  border: solid 2px;
+  transform: translate(20px,-5px);
+}
+
+footer{
+  background-color:  #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+}
+
 header #navegador > div a{
   color: black;
   text-decoration: underline;
   padding: 10px;
 
-
 }
-
 
 header #navegador div a:hover{
   color: white;
   background-color: rgb(89, 156, 179);
   text-decoration: none;
 }
+
+footer #contFooter #contacto{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 10%;
+  margin-top: 15px;
+}
+
+footer #contFooter #redes{
+  display: flex;
+  flex-direction: column;
+  flex: 0.5 0.5 10%;
+  margin-top: 5px;
+
+}
+
+footer #contFooter #redes a{
+  text-decoration: none;
+  color: black;
+}
+
+footer #contFooter #extra a{
+  text-decoration: none;
+  color: black;
+}
+
+footer #contFooter #contacto a{
+    text-decoration: none;
+    color: black;
+}
+
+footer#contFooter #termino{
+  text-align: center;
+  margin-top: 100px;
+}
+
+footer #contFooter #derechos{
+  display: flex;
+  flex-direction: column;
+  flex: 0.2 0.2 10%;
+  margin-top: 5px;
+}
+
+footer #contFooter #extra{
+  display: flex;
+  flex-direction: column;
+  flex: 0.5 0.5 10%;
+  margin-top: 5px;
+}
+
+@media (min-width:900px){ /*DESKOP  */
+
+
+.contenido{
+  width: 900px;
+}
+
+#ImgSecundaria #contImg{
+  display: flex;
+  flex-direction: row;
+  flex: 5 5 50%;
+}
+
+#segunda {
+width: 50%;
+padding: 10px;
+}
+
+#tercera {
+width: 50%;
+padding: 10px;
+}
+
+footer #contFooter{
+  display: flex;
+  flex-direction: row;
+}
+
+
 }
 
 @media (max-width:899px) { /*CEL */
+
+.contenido{
+  width: 100%;
+}
+
+#ImgSecundaria #contImg{
+  display: flex;
+  flex-direction: column;
+}
+
+#segunda {
+width: 100%;
+padding: 10px;
+}
+
+#tercera {
+width: 100%;
+padding: 12px;
+}
+
+footer #contFooter{
+  display: flex;
+  flex-direction: column;
+}
+
 
 }
