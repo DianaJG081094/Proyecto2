@@ -82,6 +82,22 @@ margin: 10px;
   transform: translate(20px,-5px);
 }
 
+#ImgSecundaria #paisajes #p1{
+	-webkit-filter:blur(10px);
+	filter: blur(10px);
+}
+
+#ImgSecundaria #paisajes #p3{
+	-webkit-filter:sepia(90%);
+	filter: sepia(90%);
+}
+
+#ImgSecundaria #paisajes >div:nth-child(even){
+  -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
+}
+
+
 footer{
   background-color:  #C6d5c5;
   border-radius: 0px 0px 10px 10px;
@@ -155,6 +171,20 @@ footer #contFooter #extra{
 .contenido{
   width: 900px;
 }
+
+
+
+#ImgSecundaria #paisajes{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  width: 900px;
+}
+
+#ImgSecundaria #paisajes .ipaisajes{
+  width: 30%;
+}
+
 
 #ImgSecundaria #contImg{
   display: flex;
