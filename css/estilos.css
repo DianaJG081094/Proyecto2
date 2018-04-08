@@ -1,6 +1,7 @@
 body{
   font-family: 'Dancing Script', cursive;
   background: #02010a;
+  animation: slidein 2s;
 
 }
 
@@ -164,6 +165,14 @@ footer #contFooter #extra{
   flex: 0.5 0.5 10%;
   margin-top: 5px;
 }
+
+@-webkit-keyframes slidein {
+  0%{margin-top: 150%}
+  60%{margin-top: -5%}
+  100%{margin-top: 0%}
+}
+
+
 
 @media (min-width:900px){ /*DESKOP  */
 
